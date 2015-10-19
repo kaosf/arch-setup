@@ -2,6 +2,7 @@
 
 ```sh
 curl https://raw.githubusercontent.com/kaosf/arch-setup/master/setup.sh | sh
+curl https://raw.githubusercontent.com/kaosf/arch-setup/master/go-setup.sh | sh
 ```
 
 ## License
