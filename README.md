@@ -1,13 +1,13 @@
 # Arch Setup
 
 ```sh
-curl https://raw.githubusercontent.com/kaosf/arch-setup/master/setup.sh | sh
-curl https://raw.githubusercontent.com/kaosf/arch-setup/master/go-setup.sh | sh
-curl https://raw.githubusercontent.com/kaosf/arch-setup/master/vim-setup.sh | sh
+curl https://raw.githubusercontent.com/kaosf/arch-setup/master/setup.sh | bash
+curl https://raw.githubusercontent.com/kaosf/arch-setup/master/go-setup.sh | bash
+curl https://raw.githubusercontent.com/kaosf/arch-setup/master/vim-setup.sh | bash
 ```
 
 ```sh
-curl https://raw.githubusercontent.com/kaosf/arch-setup/master/unsecure-root-setup.sh | sh $USERNAME
+curl https://raw.githubusercontent.com/kaosf/arch-setup/master/unsecure-root-setup.sh | bash -s $USERNAME
 ```
 
 ## License
