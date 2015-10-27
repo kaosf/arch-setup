@@ -1,5 +1,6 @@
 if [ $# -lt 1 ]; then exit 1; fi
 NAME=$1
+pacman --noconfirm -Syy
 pacman --noconfirm -S zsh
 cp -r /etc/skel /home/$NAME
 useradd $NAME -s /usr/bin/zsh
