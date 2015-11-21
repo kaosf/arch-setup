@@ -5,6 +5,7 @@ curl https://raw.githubusercontent.com/kaosf/arch-setup/master/setup.sh | bash
 curl https://raw.githubusercontent.com/kaosf/arch-setup/master/go-setup.sh | bash
 curl https://raw.githubusercontent.com/kaosf/arch-setup/master/vim-setup.sh | bash
 curl https://raw.githubusercontent.com/kaosf/arch-setup/master/nodejs-setup.sh | bash
+curl https://raw.githubusercontent.com/kaosf/arch-setup/master/ruby-setup.sh | bash
 ```
 
 ```sh
