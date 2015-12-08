@@ -1,5 +1,4 @@
-# yaourt -S mariadb
-sudo pacman -S mariadb
+yaourt -S mariadb
 
 sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 sudo systemctl start mysqld
