@@ -3,5 +3,5 @@ echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zprofile
 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zshenv
 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.bash_profile
 exec $SHELL
-nodebrew install-binary 5.4.1
+nodebrew install-binary 5.5.0
 nodebrew use latest
