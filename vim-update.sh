@@ -6,6 +6,7 @@ fi
 cd /usr/local/src/vim
 
 # git checkout the latest tag
+git fetch origin --prune
 VERSION=`git tag -l | grep -E 'v[1-9][0-9]*.[1-9][0-9]*.[1-9][0-9]*' | sort --version-sort | tail -1`
 git checkout $VERSION
 
