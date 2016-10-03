@@ -1,10 +1,11 @@
 yaourt -S postgresql
 
-USERNAME=`whoami`
-
 sudo -i -u postgres
 initdb --locale en_US.UTF-8 -E UTF8 -D '/var/lib/postgres/data'
-createuser ${USERNAME} -d -l
+sudo systemctl start postgresql
 exit
 
-sudo systemctl start postgresql
+USERNAME=`whoami`
+sudo -i -u postgres
+createuser ${USERNAME} -d -l
+exit
