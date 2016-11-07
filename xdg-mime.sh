@@ -20,3 +20,7 @@
 # ref.
 # http://cocu.hatenablog.com/entry/2014/09/20/224028
 # http://linux.die.net/man/1/xdg-mime
+
+# Set default file manager
+# ref. https://wiki.archlinuxjp.org/index.php/Xdg-open
+xdg-mime default pcmanfm.desktop inode/directory
