@@ -17,6 +17,12 @@
 # xdg-mime default midori.desktop x-scheme-handler/http
 # xdg-mime default midori.desktop x-scheme-handler/https
 
+# # Set 3
+# yaourt -S google-chrome
+# xdg-mime default google-chrome.desktop text/html
+# xdg-mime default google-chrome.desktop x-scheme-handler/http
+# xdg-mime default google-chrome.desktop x-scheme-handler/https
+
 # ref.
 # http://cocu.hatenablog.com/entry/2014/09/20/224028
 # http://linux.die.net/man/1/xdg-mime
