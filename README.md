@@ -12,6 +12,12 @@ curl https://raw.githubusercontent.com/kaosf/arch-setup/master/ruby-setup.sh | b
 curl https://raw.githubusercontent.com/kaosf/arch-setup/master/unsecure-root-setup.sh | bash -s $USERNAME
 ```
 
+## yaourt setup
+
+```sh
+curl https://raw.githubusercontent.com/kaosf/arch-setup/master/yaourt-setup.sh | bash
+```
+
 ## License
 
 [![Public Domain](http://i.creativecommons.org/p/mark/1.0/88x31.png)](http://creativecommons.org/publicdomain/mark/1.0/ "license")
