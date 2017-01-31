@@ -6,8 +6,4 @@ exit
 
 sudo systemctl start postgresql.service
 
-# "<YOUR_USERNAME>" must be modified to your real user name.
-# (the result of "whoami" command output)
-sudo -i -u postgres
-createuser <YOUR_USERNAME> -d -l
-exit
+sudo su - postgres -c "createuser $USER -d -l"
