@@ -8,3 +8,7 @@ rustup default stable
 
 rustup target add x86_64-pc-windows-msvc
 rustup target remove x86_64-pc-windows-msvc
+
+echo 'export PATH=$HOME/.cargo/bin:$PATH' >> $HOME/.zshenv
+echo 'export PATH=$HOME/.cargo/bin:$PATH' >> $HOME/.zprofile
+echo 'export PATH=$HOME/.cargo/bin:$PATH' >> $HOME/.bash_profile
