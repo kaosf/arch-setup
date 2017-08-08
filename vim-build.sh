@@ -36,6 +36,7 @@ fi
   --enable-rubyinterp \
   --enable-luainterp=yes \
   --enable-multibyte \
+  --enable-terminal \
   --enable-fail-if-missing \
   --with-features=huge \
   --with-x \
