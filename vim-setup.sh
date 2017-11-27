@@ -5,3 +5,6 @@ fi
 if [ ! -d $HOME/.vim/ka-vim-snippets ]; then
   git clone git://github.com/kaosf/ka-vim-snippets.git $HOME/.vim/ka-vim-snippets
 fi
+
+# Install Python 3 "neovim" package
+pip3 install --user neovim
