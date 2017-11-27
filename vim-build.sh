@@ -16,7 +16,7 @@ git clone https://github.com/vim/vim vim-$NOW
 cd vim-$NOW
 
 # git checkout the latest tag
-VERSION=`git tag -l | grep -E 'v[1-9][0-9]*.[1-9][0-9]*.[1-9][0-9]*' | sort --version-sort | tail -1`
+VERSION=`git tag -l | sort --version-sort | tail -1`
 git checkout $VERSION
 
 NAME=`git config user.name`
