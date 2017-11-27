@@ -32,7 +32,7 @@ fi
   --with-compiledby="${NAME} <${EMAIL}>" \
   --enable-gui=gtk2 \
   --enable-perlinterp=yes \
-  --enable-pythoninterp=yes \
+  --enable-python3interp=yes \
   --enable-rubyinterp \
   --enable-luainterp=yes \
   --enable-multibyte \
