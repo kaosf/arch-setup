@@ -9,7 +9,8 @@ fi
 
 sudo pacman --noconfirm -S git luajit
 
-cd /tmp
+mkdir -p $HOME/local/src
+cd $HOME/local/src
 # NOW=YYYYMMDDHHMMSS
 NOW=`date +%Y%m%d%H%M%S`
 git clone https://github.com/vim/vim vim-$NOW
