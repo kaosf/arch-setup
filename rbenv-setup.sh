@@ -1,5 +1,5 @@
 # The case of using rbenv
-sudo pacman --noconfirm -S rbenv ruby-build
+yaourt --noconfirm -S rbenv ruby-build
 # Remove GEM_HOME and add "unset GEM_HOME" until next reboot.
 echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv
 echo 'eval "$(rbenv init -)"' >> $HOME/.zprofile
