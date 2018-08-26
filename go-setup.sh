@@ -1,11 +1,23 @@
-sudo pacman --noconfirm -S go
-mkdir -p ~/.go
-export GOPATH=$HOME/.gocode
-export PATH=$HOME/.gocode/bin:$PATH
-echo 'export GOPATH=$HOME/.gocode'         >> $HOME/.zprofile
-echo 'export PATH=$HOME/.gocode/bin:$PATH' >> $HOME/.zprofile
-echo 'export GOPATH=$HOME/.gocode'         >> $HOME/.zshenv
-echo 'export PATH=$HOME/.gocode/bin:$PATH' >> $HOME/.zshenv
-echo 'export GOPATH=$HOME/.gocode'         >> $HOME/.bash_profile
-echo 'export PATH=$HOME/.gocode/bin:$PATH' >> $HOME/.bash_profile
-go get github.com/peco/peco/cmd/peco
+# ref. https://github.com/syndbg/goenv
+
+git clone https://github.com/syndbg/goenv.git ~/.goenv
+
+#echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.bash_profile
+#echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+echo 'export GOENV_ROOT="$HOME/.goenv"' >> ~/.zprofile
+echo 'export PATH="$GOENV_ROOT/bin:$PATH"' >> ~/.zprofile
+#echo 'eval "$(goenv init -)"' >> ~/.bash_profile
+echo 'eval "$(goenv init -)"' >> ~/.zprofile
+
+mkdir -p ~/.golang
+#echo 'export GOPATH=$HOME/.golang' >> ~/.bash_profile
+echo 'export GOPATH=$HOME/.golang' >> ~/.zprofile
+
+#source ~/.bash_profile
+source ~/.zprofile
+
+goenv install 1.10.0
+goenv global 1.10.0
+
+# Uninstall
+#rm -rf `goenv root`
