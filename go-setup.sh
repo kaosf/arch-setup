@@ -12,12 +12,14 @@ echo 'eval "$(goenv init -)"' >> ~/.zprofile
 mkdir -p ~/.golang
 #echo 'export GOPATH=$HOME/.golang' >> ~/.bash_profile
 echo 'export GOPATH=$HOME/.golang' >> ~/.zprofile
+#echo 'export PATH=$GOPATH/bin:$PATH' >> ~/.bash_profile
+echo 'export PATH=$GOPATH/bin:$PATH' >> ~/.zprofile
 
 #source ~/.bash_profile
 source ~/.zprofile
 
-goenv install 1.10.0
-goenv global 1.10.0
+goenv install 1.11.0
+goenv global 1.11.0
 
 # Uninstall
 #rm -rf `goenv root`
