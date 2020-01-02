@@ -1,16 +1,9 @@
-if cat /etc/pacman.conf | grep archlinuxfr > /dev/null 2>&1; then
-  echo '# Configurations for yaourt is OK'
-else
-  cat <<EOF | sudo tee -a /etc/pacman.conf
-[archlinuxfr]
-SigLevel = Never
-Server = http://repo.archlinux.fr/\$arch
-EOF
-  sudo pacman --noconfirm --sync --refresh yaourt
-fi
+# ref. https://itsfoss.com/best-aur-helpers
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
-yaourt --noconfirm -Syua
-yaourt --noconfirm -S git tmux tig
+yay -S git tig
 
 mkdir -p $HOME/local/bin
 if echo $PATH | grep "$HOME/local/bin" > /dev/null 2>&1; then
