@@ -12,13 +12,13 @@
 # xdg-mime default firefox.desktop x-scheme-handler/https
 
 # # Set 2
-# yaourt -S midori
+# yay -S midori
 # xdg-mime default midori.desktop text/html
 # xdg-mime default midori.desktop x-scheme-handler/http
 # xdg-mime default midori.desktop x-scheme-handler/https
 
 # # Set 3
-# yaourt -S google-chrome
+# yay -S google-chrome
 # xdg-mime default google-chrome.desktop text/html
 # xdg-mime default google-chrome.desktop x-scheme-handler/http
 # xdg-mime default google-chrome.desktop x-scheme-handler/https

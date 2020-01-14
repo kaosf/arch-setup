@@ -1,4 +1,4 @@
-yaourt -S mariadb
+yay -S mariadb
 
 sudo su
 #### root user operations
