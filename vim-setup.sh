@@ -7,4 +7,4 @@ if [ ! -d $HOME/.vim/ka-vim-snippets ]; then
 fi
 
 # Install Python 3 "neovim" package
-pip3.8 install --user neovim
+pip3.10 install --user neovim
