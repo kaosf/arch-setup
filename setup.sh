@@ -14,3 +14,7 @@ else
   echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.profile
   echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.bash_profile
 fi
+
+# ref. https://turtlechan.hatenablog.com/entry/2019/08/25/194849
+sudo pacman-mirrors --fasttrack && sudo pacman -Syy
+# It updates /etc/pacman.d/mirrorlist
