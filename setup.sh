@@ -1,6 +1,7 @@
 # ref. https://itsfoss.com/best-aur-helpers
 git clone https://aur.archlinux.org/yay.git
 cd yay
+sudo pacman -S make # Only it is required.
 makepkg -si
 
 yay -S git tig
